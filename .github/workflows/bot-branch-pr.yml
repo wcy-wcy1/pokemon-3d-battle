@@ -1,0 +1,27 @@
+name: Open bot draft PR
+on:
+  push:
+    branches:
+      - 'bots/**'
+permissions:
+  contents: read
+  pull-requests: write
+concurrency:
+  group: bot-pr-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  open:
+    if: github.event.deleted == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open draft for new branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -eu
+          existing=$(gh pr list --repo "$REPO" --base main --head "$BRANCH" --state open --json number --jq 'length')
+          if [ "$existing" = 0 ]; then
+            gh pr create --repo "$REPO" --base main --head "$BRANCH" --draft --title "$BRANCH" --body 'Submitted from the shared Discord bot workspace.'
+          fi
