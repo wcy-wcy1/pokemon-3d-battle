@@ -1,0 +1,60 @@
+name: Discord ll draft PR
+run-name: Discord ll request ${{ inputs.message }}
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Discord message ID
+        required: true
+        type: string
+      task:
+        description: Requested project change
+        required: true
+        type: string
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: discord-ll-${{ inputs.message }}
+  cancel-in-progress: false
+jobs:
+  change:
+    if: github.actor == 'wcy-wcy1' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check request
+        env:
+          MESSAGE: ${{ inputs.message }}
+          HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+        run: |
+          [[ "$MESSAGE" =~ ^[0-9]{17,20}$ ]]
+          if [[ "$HAS_KEY" != true ]]; then echo "::error::Set repository secret ANTHROPIC_API_KEY"; exit 1; fi
+      - uses: anthropics/claude-code-action@acfe7992852970efb4fee683d63d628e3e52df67
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ github.token }}
+          prompt: |
+            Edit the checked-out game for this Discord task. Leave changes in the working tree for the next step.
+            ${{ inputs.task }}
+          claude_args: --allowedTools "Read,Glob,Grep,Edit,Write" --max-turns 35
+      - name: Publish draft PR
+        env:
+          MESSAGE: ${{ inputs.message }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          branch="ll/discord-$MESSAGE"
+          git switch -c "$branch"
+          git add --all
+          if git diff --cached --quiet; then echo 'No project changes'; exit 0; fi
+          git diff --cached --quiet -- .github || { echo 'Workflow edits are outside this task'; exit 1; }
+          git config user.name 'll'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Apply Discord project request $MESSAGE"
+          gh auth setup-git
+          git push origin "$branch"
+          gh pr create --draft --base main --head "$branch" --title "ll: Discord request $MESSAGE" --body "Project changes requested in Discord message $MESSAGE."
