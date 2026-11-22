@@ -1,0 +1,1 @@
+For this project, read docs/wiki/README.md from main and the current pull request before making changes. Follow its handoff and evidence conventions. When using the GitHub file helper without a checkout, read those files through the helper.
