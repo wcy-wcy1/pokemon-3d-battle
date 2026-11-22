@@ -1,0 +1,10 @@
+const {chromium}=require(process.env.LOCALAPPDATA+'/npm-cache/_npx/31e32ef8478fbf80/node_modules/playwright-core');
+(async()=>{const b=await chromium.launch({channel:'chrome',args:['--enable-unsafe-swiftshader','--use-angle=swiftshader']});try{
+const p=await b.newPage({viewport:{width:640,height:360}}),errors=[];p.on('pageerror',e=>errors.push(String(e)));p.on('console',m=>{if(m.text().includes('Shader Error'))errors.push(m.text())});
+await p.goto(require('url').pathToFileURL(require('path').resolve('outputs/index.html')).href);await p.evaluate(()=>{S.team=[25,9,150];exOpen(0);cancelAnimationFrame(field.frame)});await p.waitForFunction(()=>field.p.ready&&field.e.ready);
+const result=await p.evaluate(()=>{let f=field,u=f.p,e=f.e;f.el.querySelector('.exStart').click();f.blocks=[];f.wx.left=999;e.stun=999;e.hp=e.max=5000;
+const tick=()=>exSim(f,1/90),check=(ok,msg)=>{if(!ok)throw Error(msg)},canvas=document.createElement('canvas');canvas.width=640;canvas.height=1440;let ctx=canvas.getContext('2d');
+canvas.height=720;for(let trial=0;trial<2;trial++){u.pos.set(-.9,0,0);e.pos.set(trial?4:0,0,0);e.stun=999;e.inv=0;u.en=100;f.cd[0]=0;u.face=Math.PI/2;tick();let hp=e.hp;exAct(f,0);let a=u.cmd;check(u.iron.mesh&&a.k==='irontail','rig');let hits=0,last=hp;for(let frame=0;frame<65;frame++){tick();if(last!==e.hp){hits++;last=e.hp}if(frame===13)check(u.iron.heat.value>.8&&hp===e.hp,'tail preparation');
+ if(!trial&&[14,31].includes(frame)){let cam=f.cam.clone();cam.position.set(-1.3,1.08,2.9);cam.lookAt(-.35,.61,0);let prev=f.cam;f.cam=cam;f.updateSight();f.r.render(f.sc,cam);f.cam=prev;ctx.drawImage(f.r.domElement,0,frame===14?0:360,640,360)}}
+ check(!u.iron.heat.value,'color not restored');check(trial?hits===0:hits===1,'sweep '+hits+' distance '+dst(u.pos,e.pos));}
+return canvas.toDataURL('image/jpeg',.88).split(',')[1]});if(errors.length)throw Error(errors);require('fs').writeFileSync('outputs/iron-tail.jpg',Buffer.from(result,'base64'));console.log('PASS: weighted tail, contact hit, out of range miss, color restored');}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1})

@@ -1,0 +1,12 @@
+/outputs/*
+!/outputs/.gitkeep
+/work/*.jpg
+/work/*.png
+/work/*.gif
+/work/*.tmp
+__pycache__/
+node_modules/
+.env
+.env.*
+*.pem
+*.key

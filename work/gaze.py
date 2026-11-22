@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/creature.js');s=p.read_text('utf-8-sig');s=s.replace("l.gaze+=(desired-l.gaze)","l.eyeAim=(l.eyeAim||0)+(desired-(l.eyeAim||0))*(1-Math.exp(-dt*14));l.gaze+=(desired-l.gaze)");s=s.replace("s.last=n}}","s.last=n}if(!s.mouth&&[25,197,133].includes(u.d.id)){let glance=face==='blink'||face==='hit'?0:cap(l.eyeAim-l.gaze*.73,-.5,.5)*.014;s.tx.offset.x=s.base.x+(n%s.cols-s.tile%s.cols)/s.cols+glance}}");p.write_text(s,'utf8')

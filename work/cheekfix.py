@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/duo.js');s=p.read_text('utf-8-sig').replace("||Math.abs(v.x)<u.height*.11","");a="for(let i=0;i<2;i++){let water=u.d.id===9,pts=samples[i];";s=s.replace(a,"if(u.d.id===25){let all=samples.flat().sort((a,b)=>a.x-b.x);if(all.length>3){let cut=(all[0].x+all[all.length-1].x)*.5;samples=[all.filter(v=>v.x<cut),all.filter(v=>v.x>=cut)]}}\n"+a);p.write_text(s,'utf8')

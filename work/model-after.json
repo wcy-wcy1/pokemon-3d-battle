@@ -1,0 +1,439 @@
+[
+  {
+    "id": 25,
+    "tris": 26604,
+    "variants": [
+      "fur",
+      "eye"
+    ]
+  },
+  {
+    "id": 9,
+    "tris": 19323,
+    "variants": [
+      "metal",
+      "eye",
+      "shell",
+      "scale"
+    ]
+  },
+  {
+    "id": 150,
+    "tris": 17529,
+    "variants": [
+      "dermis"
+    ]
+  },
+  {
+    "id": 59,
+    "tris": 23732,
+    "variants": [
+      "fur",
+      "eye"
+    ]
+  },
+  {
+    "id": 144,
+    "tris": 10014,
+    "variants": [
+      "feather",
+      "eye"
+    ]
+  },
+  {
+    "id": 149,
+    "tris": 13537,
+    "variants": [
+      "scale"
+    ]
+  },
+  {
+    "id": 1,
+    "tris": 14200,
+    "variants": [
+      "eye",
+      "leaf"
+    ],
+    "pic": null
+  },
+  {
+    "id": 3,
+    "tris": 18602,
+    "variants": [
+      "leaf",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 4,
+    "tris": 12640,
+    "variants": [
+      "eye",
+      "scale"
+    ],
+    "pic": null
+  },
+  {
+    "id": 6,
+    "tris": 14812,
+    "variants": [
+      "eye",
+      "scale"
+    ],
+    "pic": null
+  },
+  {
+    "id": 7,
+    "tris": 14968,
+    "variants": [
+      "scale",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 10,
+    "tris": 14420,
+    "variants": [
+      "chitin"
+    ],
+    "pic": null
+  },
+  {
+    "id": 12,
+    "tris": 10918,
+    "variants": [
+      "chitin"
+    ],
+    "pic": null
+  },
+  {
+    "id": 16,
+    "tris": 12076,
+    "variants": [
+      "feather",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 18,
+    "tris": 15758,
+    "variants": [
+      "eye",
+      "feather"
+    ],
+    "pic": null
+  },
+  {
+    "id": 26,
+    "tris": 10955,
+    "variants": [
+      "fur",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 35,
+    "tris": 6318,
+    "variants": [
+      "eye",
+      "hide"
+    ],
+    "pic": null
+  },
+  {
+    "id": 37,
+    "tris": 23288,
+    "variants": [
+      "fur",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 38,
+    "tris": 27331,
+    "variants": [
+      "eye",
+      "fur"
+    ],
+    "pic": null
+  },
+  {
+    "id": 39,
+    "tris": 14526,
+    "variants": [
+      "fur",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 52,
+    "tris": 18322,
+    "variants": [
+      "eye",
+      "fur"
+    ],
+    "pic": null
+  },
+  {
+    "id": 54,
+    "tris": 13212,
+    "variants": [
+      "hide",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 58,
+    "tris": 20078,
+    "variants": [
+      "fur",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 63,
+    "tris": 13654,
+    "variants": [
+      "hide"
+    ],
+    "pic": null
+  },
+  {
+    "id": 65,
+    "tris": 15730,
+    "variants": [
+      "hide",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 66,
+    "tris": 13124,
+    "variants": [
+      "eye",
+      "hide"
+    ],
+    "pic": null
+  },
+  {
+    "id": 68,
+    "tris": 18159,
+    "variants": [
+      "hide",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 74,
+    "tris": 10862,
+    "variants": [
+      "eye",
+      "stone"
+    ],
+    "pic": null
+  },
+  {
+    "id": 76,
+    "tris": 15235,
+    "variants": [
+      "stone",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 79,
+    "tris": 9304,
+    "variants": [
+      "hide",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 80,
+    "tris": 15974,
+    "variants": [
+      "hide",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 92,
+    "tris": 60712,
+    "variants": [
+      "mist"
+    ],
+    "pic": null
+  },
+  {
+    "id": 94,
+    "tris": 13170,
+    "variants": [
+      "eye",
+      "mist"
+    ],
+    "pic": null
+  },
+  {
+    "id": 95,
+    "tris": 23272,
+    "variants": [
+      "stone"
+    ],
+    "pic": null
+  },
+  {
+    "id": 104,
+    "tris": 14564,
+    "variants": [
+      "eye",
+      "hide"
+    ],
+    "pic": null
+  },
+  {
+    "id": 113,
+    "tris": 22440,
+    "variants": [
+      "hide",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 123,
+    "tris": 12016,
+    "variants": [
+      "chitin",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 129,
+    "tris": 9085,
+    "variants": [
+      "scale",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 130,
+    "tris": 11854,
+    "variants": [
+      "scale",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 131,
+    "tris": 50704,
+    "variants": [
+      "scale"
+    ],
+    "pic": null
+  },
+  {
+    "id": 133,
+    "tris": 20521,
+    "variants": [
+      "fur",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 134,
+    "tris": 18466,
+    "variants": [
+      "hide",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 135,
+    "tris": 17602,
+    "variants": [
+      "eye",
+      "fur"
+    ],
+    "pic": null
+  },
+  {
+    "id": 136,
+    "tris": 24101,
+    "variants": [
+      "eye",
+      "fur"
+    ],
+    "pic": null
+  },
+  {
+    "id": 143,
+    "tris": 2774,
+    "variants": [
+      "fur"
+    ],
+    "pic": null
+  },
+  {
+    "id": 145,
+    "tris": 11255,
+    "variants": [
+      "feather",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 146,
+    "tris": 13463,
+    "variants": [
+      "feather",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 151,
+    "tris": 12345,
+    "variants": [
+      "fur",
+      "eye"
+    ],
+    "pic": null
+  },
+  {
+    "id": 197,
+    "tris": 25029,
+    "variants": [
+      "eye",
+      "fur"
+    ],
+    "pic": null
+  },
+  {
+    "id": 384,
+    "tris": 11319,
+    "variants": [
+      "eye",
+      "scale"
+    ],
+    "pic": null
+  }
+]

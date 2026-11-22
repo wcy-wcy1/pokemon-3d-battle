@@ -1,0 +1,7 @@
+const fs=require('fs'),{chromium}=require(process.env.LOCALAPPDATA+'/npm-cache/_npx/31e32ef8478fbf80/node_modules/playwright-core'),assert=require('assert');
+(async()=>{let b=await chromium.launch({channel:'chrome',args:['--enable-unsafe-swiftshader','--use-angle=swiftshader']});try{
+let p=await b.newPage({viewport:{width:360,height:258}}),errors=[];p.on('pageerror',e=>errors.push(String(e)));p.on('console',e=>{if(e.type()==='error')errors.push(e.text().slice(0,250))});await p.goto(require('url').pathToFileURL(require('path').resolve('outputs/index.html')).href);
+await p.evaluate(()=>{exGate();cancelAnimationFrame(field.frame);observe(field)});let ids=await p.evaluate(()=>all.map(d=>d.id)),out=[];
+for(let id of [25,9,95,143]){await p.evaluate(id=>watchAnimal(field,id),id);await p.waitForFunction(()=>field.p.ready);let rec=await p.evaluate(id=>{const f=field,u=f.p,info=f.watch.bar.querySelector('.watchBio').textContent;inspect(id);let details=document.querySelector('#detail').innerText;modal.close();return {id,display:info,detail:details.includes(info),meters:u.d.meters,kg:u.d.kg,height:u.height,frames:[]}},id);rec.frames.forEach((f,i)=>fs.writeFileSync('work/fauna'+id+'-'+i+'.jpg',Buffer.from(f,'base64')));delete rec.frames;out.push(rec)}
+console.log(out);assert(out.every(r=>r.detail));assert.equal(out[2].meters,8.8);assert.equal(out[3].kg,460);console.log('moving rigs',out.length,'errors',errors);assert.equal(out.length,4);assert.equal(errors.length,0)
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1})

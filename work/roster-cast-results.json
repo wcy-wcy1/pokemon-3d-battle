@@ -1,0 +1,705 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "name": "妙蛙种子",
+      "move": "藤鞭",
+      "kind": "vine",
+      "model": true,
+      "damage": 36,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -1.6334399999999998,
+        0.5820585936215017,
+        1.6322092539035924e-17
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 3,
+      "name": "妙蛙花",
+      "move": "日光束",
+      "kind": "solar",
+      "model": true,
+      "damage": 85,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -1.9,
+        2.4034994317497147,
+        0
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 4,
+      "name": "小火龙",
+      "move": "火花",
+      "kind": "ember",
+      "model": true,
+      "damage": 60,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.2720944997118453,
+        0.5083786124849291,
+        -0.03603517156287458
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 6,
+      "name": "喷火龙",
+      "move": "爆炸烈焰",
+      "kind": "inferno",
+      "model": true,
+      "damage": 123,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -0.2573812226932758,
+        4.466183588765039,
+        -0.3268947955341268
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 7,
+      "name": "杰尼龟",
+      "move": "水枪",
+      "kind": "water",
+      "model": true,
+      "damage": 27,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -1.566491367702782,
+        0.3746635521046416,
+        -0.029832539984306395
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 9,
+      "name": "水箭龟",
+      "move": "加农水炮",
+      "kind": "hydro",
+      "model": true,
+      "damage": 88,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 10,
+      "name": "绿毛虫",
+      "move": "吐丝",
+      "kind": "silk",
+      "model": true,
+      "damage": 56,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -1.7071944162393244,
+        0.2964769859052629,
+        -0.046876028433978076
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 12,
+      "name": "巴大蝶",
+      "move": "银色旋风",
+      "kind": "silver",
+      "model": true,
+      "damage": 70,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.3492667285891213,
+        3.364749431404068,
+        2.4648770420471996e-17
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 16,
+      "name": "波波",
+      "move": "起风",
+      "kind": "gust",
+      "model": true,
+      "damage": 56,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.632427211492898,
+        2.357391327338095,
+        6.704173107162513e-18
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 18,
+      "name": "大比鸟",
+      "move": "神鸟猛击",
+      "kind": "dive",
+      "model": true,
+      "damage": 91,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 25,
+      "name": "皮卡丘",
+      "move": "十万伏特",
+      "kind": "spark",
+      "model": true,
+      "damage": 91,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 26,
+      "name": "雷丘",
+      "move": "打雷",
+      "kind": "thunder",
+      "model": true,
+      "damage": 68,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 35,
+      "name": "皮皮",
+      "move": "魅惑之声",
+      "kind": "chime",
+      "model": true,
+      "damage": 42,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 37,
+      "name": "六尾",
+      "move": "火焰旋涡",
+      "kind": "vortex",
+      "model": true,
+      "damage": 51,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.5055814307509663,
+        0.5331721373183187,
+        1.3340350149901676e-17
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 38,
+      "name": "九尾",
+      "move": "鬼火",
+      "kind": "wisps",
+      "model": true,
+      "damage": 95,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.3144807471963065,
+        0.9108584382458488,
+        2.4384885753307533e-17
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 39,
+      "name": "胖丁",
+      "move": "唱歌",
+      "kind": "song",
+      "model": true,
+      "damage": 0,
+      "slept": true,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 52,
+      "name": "喵喵",
+      "move": "聚宝功",
+      "kind": "coins",
+      "model": true,
+      "damage": 40,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.583091706617239,
+        0.29727278179171185,
+        8.906067129534413e-18
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 54,
+      "name": "可达鸭",
+      "move": "水之波动",
+      "kind": "ripple",
+      "model": true,
+      "damage": 26,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.548491816260312,
+        0.521092973692028,
+        -0.07901373938091281
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 58,
+      "name": "卡蒂狗",
+      "move": "火焰牙",
+      "kind": "fang",
+      "model": true,
+      "damage": 84,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 59,
+      "name": "风速狗",
+      "move": "闪焰冲锋",
+      "kind": "rush",
+      "model": true,
+      "damage": 101,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 63,
+      "name": "凯西",
+      "move": "念力",
+      "kind": "mind",
+      "model": true,
+      "damage": 39,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.1139082778005234,
+        1.014383174899594,
+        -0.09421259639814583
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 65,
+      "name": "胡地",
+      "move": "精神强念",
+      "kind": "psybeam",
+      "model": true,
+      "damage": 88,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -1.8757541117001797,
+        1.2606109303696058,
+        -0.3904521527810719
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 66,
+      "name": "腕力",
+      "move": "空手劈",
+      "kind": "chop",
+      "model": true,
+      "damage": 35,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 68,
+      "name": "怪力",
+      "move": "爆裂拳",
+      "kind": "barrage",
+      "model": true,
+      "damage": 68,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 74,
+      "name": "小拳石",
+      "move": "落石",
+      "kind": "rock",
+      "model": true,
+      "damage": 29,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 76,
+      "name": "隆隆岩",
+      "move": "岩石爆击",
+      "kind": "boulders",
+      "model": true,
+      "damage": 54,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.8590562019114687,
+        1.1150404276392112,
+        0.9360420790291282
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 79,
+      "name": "呆呆兽",
+      "move": "意念头锤",
+      "kind": "headbutt",
+      "model": true,
+      "damage": 27,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 80,
+      "name": "呆壳兽",
+      "move": "贝壳夹击",
+      "kind": "clamp",
+      "model": true,
+      "damage": 52,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 92,
+      "name": "鬼斯",
+      "move": "舌舔",
+      "kind": "tongue",
+      "model": true,
+      "damage": 53,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -1.4049599999999998,
+        3.8523086861293114,
+        3.0312457572495295e-17
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 94,
+      "name": "耿鬼",
+      "move": "暗影球",
+      "kind": "shadow",
+      "model": true,
+      "damage": 86,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.2797031392324123,
+        1.2748978237245763,
+        -0.55934344923148
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 95,
+      "name": "大岩蛇",
+      "move": "岩崩",
+      "kind": "rockfall",
+      "model": true,
+      "damage": 43,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 104,
+      "name": "卡拉卡拉",
+      "move": "骨头回力镖",
+      "kind": "bone",
+      "model": true,
+      "damage": 50,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.8148404920112473,
+        0.29820804544854085,
+        0.17024328363854127
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 113,
+      "name": "吉利蛋",
+      "move": "拍击",
+      "kind": "slap",
+      "model": true,
+      "damage": 72,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 123,
+      "name": "飞天螳螂",
+      "move": "连斩",
+      "kind": "fury",
+      "model": true,
+      "damage": 110,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 129,
+      "name": "鲤鱼王",
+      "move": "撞击",
+      "kind": "tackle",
+      "model": true,
+      "damage": 30,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 130,
+      "name": "暴鲤龙",
+      "move": "攀瀑",
+      "kind": "waterfall",
+      "model": true,
+      "damage": 65,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 131,
+      "name": "拉普拉斯",
+      "move": "冰冻光束",
+      "kind": "ice",
+      "model": true,
+      "damage": 123,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "ray": [
+        -0.9479999999999997,
+        2.214541974811533,
+        5.829318763941402e-17
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 133,
+      "name": "伊布",
+      "move": "电光一闪",
+      "kind": "quick",
+      "model": true,
+      "damage": 51,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 134,
+      "name": "水伊布",
+      "move": "浊流",
+      "kind": "muddy",
+      "model": true,
+      "damage": 52,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -0.5549507357983785,
+        0.6176391342949769,
+        -0.18831222251661267
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 135,
+      "name": "雷伊布",
+      "move": "放电",
+      "kind": "discharge",
+      "model": true,
+      "damage": 70,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 136,
+      "name": "火伊布",
+      "move": "喷烟",
+      "kind": "plume",
+      "model": true,
+      "damage": 107,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 2.7359999999999998
+    },
+    {
+      "id": 143,
+      "name": "卡比兽",
+      "move": "泰山压顶",
+      "kind": "bodyslam",
+      "model": true,
+      "damage": 88,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 144,
+      "name": "急冻鸟",
+      "move": "暴风雪",
+      "kind": "blizzard",
+      "model": true,
+      "damage": 134,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 145,
+      "name": "闪电鸟",
+      "move": "电磁炮",
+      "kind": "rail",
+      "model": true,
+      "damage": 97,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.4178602705346144,
+        4.090332051091247,
+        -0.17098621778082101
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 146,
+      "name": "火焰鸟",
+      "move": "燃尽",
+      "kind": "burn",
+      "model": true,
+      "damage": 150,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -0.7105640852483898,
+        4.458319362350259,
+        3.8821502643506935
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 149,
+      "name": "快龙",
+      "move": "龙之俯冲",
+      "kind": "dragonrush",
+      "model": true,
+      "damage": 88,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    },
+    {
+      "id": 150,
+      "name": "超梦",
+      "move": "精神击破",
+      "kind": "psystrike",
+      "model": true,
+      "damage": 96,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 151,
+      "name": "梦幻",
+      "move": "波导弹",
+      "kind": "aura",
+      "model": true,
+      "damage": 97,
+      "slept": false,
+      "ended": true,
+      "origin": [
+        -1.1738790735031308,
+        2.5123458250216704,
+        -0.09391528008804235
+      ],
+      "range": 3.8
+    },
+    {
+      "id": 197,
+      "name": "月亮伊布",
+      "move": "恶之波动",
+      "kind": "dark",
+      "model": true,
+      "damage": 72,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 3.8
+    },
+    {
+      "id": 384,
+      "name": "烈空坐",
+      "move": "画龙点睛",
+      "kind": "ascent",
+      "model": true,
+      "damage": 96,
+      "slept": false,
+      "ended": true,
+      "origin": null,
+      "range": 1.2
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,19 @@
+from pathlib import Path
+def edit(name,pairs):
+ p=Path('work')/name;s=p.read_text('utf-8')
+ for a,b in pairs:
+  assert a in s,a
+  s=s.replace(a,b)
+ p.write_text(s,'utf-8')
+edit('field.js',[('token:0,ready:false','air:0,vy:0,token:0,ready:false'),('<div class="exStatus"></div>','<button class="exJump exBtn" aria-label="跳跃">跳跃 <small>Space</small></button><div class="exStatus"></div>'),('WASD 移动，J/K 攻击，空格闪避，L 必杀，1–3 换人。','WASD 移动，空格跳跃，按住 Shift 冲刺；1 普攻、2 属性招式、3 必杀、V 闪避；Z/X/C 换人。'),("['J · '+choreo[f.p.d.id].n,'K · '+f.p.d.move,'SPACE','L · 释放']","['1 · '+choreo[f.p.d.id].n,'2 · '+f.p.d.move,'V','3 · 释放']"),('title="切换至','title="\'+[\'Z\',\'X\',\'C\'][i]+\' · 切换至'),("if(f.mode!=='live')return;if(['Space','ArrowLeft','ArrowDown','ArrowUp','ArrowRight'].includes(k))e.preventDefault();f.keys.add(k);if(e.repeat)return;if(['KeyJ','KeyK','Space','KeyL'].includes(k))exAct(f,['KeyJ','KeyK','Space','KeyL'].indexOf(k));if(/^Digit[123]$/.test(k))exSwitch(f,+k.slice(-1)-1)", """if((f.mode!=='live'&&f.mode!=='watch')||e.ctrlKey||e.altKey||e.metaKey||e.target.closest?.('select,input,textarea'))return;
+let moves=['KeyW','KeyA','KeyS','KeyD','ArrowRight','ArrowLeft','ArrowDown','ArrowUp','Space','ShiftLeft','ShiftRight'],act={Digit1:0,KeyJ:0,Digit2:1,KeyK:1,KeyV:2,Digit3:3,KeyL:3},swap=['KeyZ','KeyX','KeyC'];if(!moves.includes(k)&&!(f.mode==='live'&&(k in act||swap.includes(k))))return;
+e.preventDefault();f.keys.add(k);if(e.repeat)return;if(k==='Space')jumpUnit(f);else if(f.mode==='live'){if(k in act)exAct(f,act[k]);else if(swap.includes(k))exSwitch(f,swap.indexOf(k))}"""),("let pause=()=>{if(f.mode==='live')","f.on(el.querySelector('.exJump'),'click',()=>jumpUnit(f));let pause=()=>{f.keys.clear();if(f.mode==='live')")])
+edit('action.js',[('function exDir','''function jumpUnit(f){let u=f.p;if(!u.ready||!['watch','live'].includes(f.mode)||u.air>0||u.vy>0)return;u.vy=6.4}
+function verticalStep(u,dt){if(!u.air&&!u.vy)return;u.air=Math.max(0,u.air+u.vy*dt-9*dt*dt);u.vy=u.air?u.vy-18*dt:0}
+function sprinting(f){return f.keys.has('ShiftLeft')||f.keys.has('ShiftRight')}
+function exDir'''),('n.pos.copy(old.pos);','n.air=0;n.vy=0;n.pos.copy(old.pos);'),('f.clock+=dt;','f.clock+=dt;verticalStep(p,dt);'),('if(p.dash>0){sp','if(sprinting(f))sp*=1.82;if(p.dash>0){sp'),("if(keys.has('KeyJ')||f.hold)","if(keys.has('KeyJ')||keys.has('Digit1')||f.hold)"),('dst(v,t.pos)<.78+s.size','dst(v,t.pos)<.78+s.size&&v.y+s.size>=groundY(t.pos.x,t.pos.z,f.z)+t.air')])
+edit('beats.js',[('groundY(u.pos.x,u.pos.z,f.z),u.pos.z);if(!u.ready)','groundY(u.pos.x,u.pos.z,f.z)+(u.air||0),u.pos.z);if(!u.ready)'),("if(dist>=a.radius-.8","if(target.air<.68&&dist>=a.radius-.8")])
+edit('duo.js',[('o.material.opacity=cap(.46-u.body.position.y*.20','o.position.y=-(u.air||0);o.material.opacity=cap(.46-(u.body.position.y+(u.air||0))*.20'),('再按 K 释放','再按 2 释放')])
+edit('hydro.js',[('K 或点击地面','2 或点击地面'),('K · 主动释放','2 · 主动释放'),('K 双颊蓄电 · 满蓄后再按 K　/　2 切换水箭龟','2 双颊蓄电 · 满蓄后再按 2　/　X 切换水箭龟')])
+edit('watch.js',[('轻点地面，引起它的注意','轻点地面引起注意 · WASD 移动 / Shift 冲刺 / 空格跳跃'),('let speed=0,age=', 'verticalStep(u,dt);let speed=0,age='),('let vy=u.height||2', """let k=f.keys,m=V(+k.has('KeyD')-+k.has('KeyA'),0,+k.has('KeyS')-+k.has('KeyW'));if(m.lengthSq()){w.intent=null;m.normalize().applyAxisAngle(V(0,1,0),w.heading+(w.orbit||0)+Math.sin(w.time*.19)*.17+.39);speed=sprinting(f)?1.6:1;u.face=Math.atan2(m.x,m.z);exMove(f,u,m.x*dt*3.6*speed,m.z*dt*3.6*speed)}let vy=u.height||2"""),("f.p=exUnit(db[id]);","f.keys.clear();f.p=exUnit(db[id]);")])
+p=Path('work/field.css');s=p.read_text('utf-8');p.write_text(s+'\n.exJump{position:absolute;left:calc(4% + 88px);bottom:99px;z-index:3}.exJump small{font-size:10px}.expedition:has(.exIntro:not([hidden])) .exJump,.watchField .exJump{display:none}@media(max-width:768px){.exJump{bottom:75px;left:calc(4% + 74px);padding:8px}.exJump small{display:none}}\n','utf-8')

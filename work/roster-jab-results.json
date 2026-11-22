@@ -1,0 +1,805 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "name": "妙蛙种子",
+      "move": "藤梢抽击",
+      "kind": "vine",
+      "model": true,
+      "damage": 15,
+      "ended": true,
+      "contact": {
+        "time": 0.10000000000000031,
+        "air": 0,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 3,
+      "name": "妙蛙花",
+      "move": "前足重踏",
+      "kind": "stomp",
+      "model": true,
+      "damage": 35,
+      "ended": true,
+      "contact": {
+        "time": 0.18333333333333268,
+        "air": 0,
+        "dist": 1.1690263070898412,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 4,
+      "name": "小火龙",
+      "move": "利爪",
+      "kind": "claw",
+      "model": true,
+      "damage": 17,
+      "ended": true,
+      "contact": {
+        "time": 0.18333333333333268,
+        "air": 0,
+        "dist": 1.1690263070898412,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 6,
+      "name": "喷火龙",
+      "move": "翼爪横扫",
+      "kind": "claw",
+      "model": true,
+      "damage": 34,
+      "ended": true,
+      "contact": {
+        "time": 0.18333333333334245,
+        "air": 0.7834646328592215,
+        "dist": 1.1690263070898348,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 7,
+      "name": "杰尼龟",
+      "move": "卷尾拍击",
+      "kind": "curlwhip",
+      "model": true,
+      "damage": 15,
+      "ended": true,
+      "contact": {
+        "time": 0.23333333333334494,
+        "air": 0,
+        "dist": 0.4176600717922569,
+        "height": 0.952
+      },
+      "range": 0.65
+    },
+    {
+      "id": 9,
+      "name": "水箭龟",
+      "move": "龟壳撞击",
+      "kind": "shellcheck",
+      "model": true,
+      "damage": 35,
+      "ended": true,
+      "contact": {
+        "time": 0.26666666666667993,
+        "air": 0,
+        "dist": 1.1971119341901137,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 10,
+      "name": "绿毛虫",
+      "move": "头撞",
+      "kind": "bash",
+      "model": true,
+      "damage": 17,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 12,
+      "name": "巴大蝶",
+      "move": "翅粉",
+      "kind": "gust",
+      "model": true,
+      "damage": 21,
+      "ended": true,
+      "contact": {
+        "time": 0.3499999999999801,
+        "air": 2.231386996747736,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 16,
+      "name": "波波",
+      "move": "啄击",
+      "kind": "peck",
+      "model": true,
+      "damage": 17,
+      "ended": true,
+      "contact": {
+        "time": 0.29999999999998295,
+        "air": 0.7017339931114388,
+        "dist": 0.3420315805047476,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 18,
+      "name": "大比鸟",
+      "move": "翼击",
+      "kind": "wing",
+      "model": true,
+      "damage": 27,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0.7671034843295138,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 25,
+      "name": "皮卡丘",
+      "move": "铁尾",
+      "kind": "irontail",
+      "model": true,
+      "damage": 21,
+      "ended": true,
+      "contact": {
+        "time": 0.29999999999998295,
+        "air": 0,
+        "dist": 0.42999999999999994,
+        "height": 0.952
+      },
+      "range": 0.9
+    },
+    {
+      "id": 26,
+      "name": "雷丘",
+      "move": "铁尾",
+      "kind": "tail",
+      "model": true,
+      "damage": 28,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 35,
+      "name": "皮皮",
+      "move": "连环拍",
+      "kind": "palm",
+      "model": true,
+      "damage": 17,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 37,
+      "name": "六尾",
+      "move": "尾扫",
+      "kind": "tail",
+      "model": true,
+      "damage": 15,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 38,
+      "name": "九尾",
+      "move": "狐爪",
+      "kind": "claw",
+      "model": true,
+      "damage": 28,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 39,
+      "name": "胖丁",
+      "move": "短拍",
+      "kind": "palm",
+      "model": true,
+      "damage": 23,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 52,
+      "name": "喵喵",
+      "move": "猫爪",
+      "kind": "claw",
+      "model": true,
+      "damage": 17,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 54,
+      "name": "可达鸭",
+      "move": "啄击",
+      "kind": "peck",
+      "model": true,
+      "damage": 14,
+      "ended": true,
+      "contact": {
+        "time": 0.2833333333333172,
+        "air": 0,
+        "dist": 0.7429124167761314,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 58,
+      "name": "卡蒂狗",
+      "move": "咬住",
+      "kind": "bite",
+      "model": true,
+      "damage": 23,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 59,
+      "name": "风速狗",
+      "move": "猛扑",
+      "kind": "pounce",
+      "model": true,
+      "damage": 30,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 63,
+      "name": "凯西",
+      "move": "念力波",
+      "kind": "mind",
+      "model": true,
+      "damage": 16,
+      "ended": true,
+      "contact": {
+        "time": 0.2666666666666515,
+        "air": 0,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 65,
+      "name": "胡地",
+      "move": "念力勺",
+      "kind": "psychic",
+      "model": true,
+      "damage": 37,
+      "ended": true,
+      "contact": {
+        "time": 0.2499999999999858,
+        "air": 0,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 66,
+      "name": "腕力",
+      "move": "直拳",
+      "kind": "punch",
+      "model": true,
+      "damage": 14,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 68,
+      "name": "怪力",
+      "move": "连拳",
+      "kind": "punch",
+      "model": true,
+      "damage": 28,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 74,
+      "name": "小拳石",
+      "move": "石拳",
+      "kind": "punch",
+      "model": true,
+      "damage": 16,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 76,
+      "name": "隆隆岩",
+      "move": "滚撞",
+      "kind": "roll",
+      "model": true,
+      "damage": 30,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 79,
+      "name": "呆呆兽",
+      "move": "尾巴横扫",
+      "kind": "tail",
+      "model": true,
+      "damage": 15,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 80,
+      "name": "呆壳兽",
+      "move": "重拳",
+      "kind": "palm",
+      "model": true,
+      "damage": 28,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 92,
+      "name": "鬼斯",
+      "move": "鬼雾",
+      "kind": "wisp",
+      "model": true,
+      "damage": 22,
+      "ended": true,
+      "contact": {
+        "time": 0.3666666666666458,
+        "air": 2.2945358641597124,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 94,
+      "name": "耿鬼",
+      "move": "影爪",
+      "kind": "claw",
+      "model": true,
+      "damage": 36,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 95,
+      "name": "大岩蛇",
+      "move": "蛇尾横扫",
+      "kind": "tail",
+      "model": true,
+      "damage": 24,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 104,
+      "name": "卡拉卡拉",
+      "move": "骨棒击",
+      "kind": "chop",
+      "model": true,
+      "damage": 22,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 113,
+      "name": "吉利蛋",
+      "move": "掌推",
+      "kind": "palm",
+      "model": true,
+      "damage": 30,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 123,
+      "name": "飞天螳螂",
+      "move": "镰刀斩",
+      "kind": "cut",
+      "model": true,
+      "damage": 29,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0.7671034843295138,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 129,
+      "name": "鲤鱼王",
+      "move": "鱼尾扑打",
+      "kind": "flop",
+      "model": true,
+      "damage": 16,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 130,
+      "name": "暴鲤龙",
+      "move": "尾鞭",
+      "kind": "tail",
+      "model": true,
+      "damage": 36,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0.8628541570061898,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 131,
+      "name": "拉普拉斯",
+      "move": "背鳍拍击",
+      "kind": "bash",
+      "model": true,
+      "damage": 37,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 133,
+      "name": "伊布",
+      "move": "快扑",
+      "kind": "pounce",
+      "model": true,
+      "damage": 21,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 134,
+      "name": "水伊布",
+      "move": "鳍尾横扫",
+      "kind": "tail",
+      "model": true,
+      "damage": 28,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 135,
+      "name": "雷伊布",
+      "move": "针毛",
+      "kind": "pin",
+      "model": true,
+      "damage": 29,
+      "ended": true,
+      "contact": {
+        "time": 0.19999999999998863,
+        "air": 0,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 136,
+      "name": "火伊布",
+      "move": "火爪",
+      "kind": "claw",
+      "model": true,
+      "damage": 30,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 143,
+      "name": "卡比兽",
+      "move": "熊掌",
+      "kind": "palm",
+      "model": true,
+      "damage": 37,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 144,
+      "name": "急冻鸟",
+      "move": "翼刃",
+      "kind": "wing",
+      "model": true,
+      "damage": 40,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0.7834646328593604,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 145,
+      "name": "闪电鸟",
+      "move": "电羽",
+      "kind": "pin",
+      "model": true,
+      "damage": 41,
+      "ended": true,
+      "contact": {
+        "time": 0.2666666666666515,
+        "air": 2.3807246568037685,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 146,
+      "name": "火焰鸟",
+      "move": "灼翼",
+      "kind": "wing",
+      "model": true,
+      "damage": 41,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0.8080063556541298,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 149,
+      "name": "快龙",
+      "move": "龙爪",
+      "kind": "claw",
+      "model": true,
+      "damage": 37,
+      "ended": true,
+      "contact": {
+        "time": 0.1833333333333229,
+        "air": 0.8243675041839762,
+        "dist": 1.1690263070898474,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 150,
+      "name": "超梦",
+      "move": "念力光波",
+      "kind": "mewpalm",
+      "model": true,
+      "damage": 40,
+      "ended": true,
+      "contact": {
+        "time": 0.35000000000027853,
+        "air": 2.51131465856212,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 151,
+      "name": "梦幻",
+      "move": "尾尖念波",
+      "kind": "mind",
+      "model": true,
+      "damage": 41,
+      "ended": true,
+      "contact": {
+        "time": 0.3166666666669187,
+        "air": 2.0118117487573883,
+        "dist": 3.2,
+        "height": 0.952
+      },
+      "range": 3.2
+    },
+    {
+      "id": 197,
+      "name": "月亮伊布",
+      "move": "潜影扑击",
+      "kind": "pounce",
+      "model": true,
+      "damage": 30,
+      "ended": true,
+      "contact": {
+        "time": 0.18333333333347923,
+        "air": 0,
+        "dist": 1.1690263070897453,
+        "height": 0.952
+      },
+      "range": 1.2
+    },
+    {
+      "id": 384,
+      "name": "烈空坐",
+      "move": "龙尾",
+      "kind": "tail",
+      "model": true,
+      "damage": 40,
+      "ended": true,
+      "contact": {
+        "time": 0.18333333333347923,
+        "air": 0.7267680621880562,
+        "dist": 1.1690263070897453,
+        "height": 0.952
+      },
+      "range": 1.2
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,505 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "kg": 6.9,
+      "model": true,
+      "chestPeak": 0.19053349541508946,
+      "neckPeak": 0.10651278635185825,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 3,
+      "kg": 100,
+      "model": true,
+      "chestPeak": 0.10553861798214904,
+      "neckPeak": 0.05906236137286613,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 4,
+      "kg": 8.5,
+      "model": true,
+      "chestPeak": 0.182176065903982,
+      "neckPeak": 0.10168771968516539,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 6,
+      "kg": 90.5,
+      "model": true,
+      "chestPeak": 0.10799542137502191,
+      "neckPeak": 0.06041073086310613,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 7,
+      "kg": 9,
+      "model": true,
+      "chestPeak": 0.17992370085552342,
+      "neckPeak": 0.10039124206380592,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 9,
+      "kg": 85.5,
+      "model": true,
+      "chestPeak": 0.10941164940270205,
+      "neckPeak": 0.06118776109436398,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 10,
+      "kg": 2.9,
+      "model": true,
+      "chestPeak": 0.22955797351614587,
+      "neckPeak": 0.1285502208095732,
+      "chestFrame": 3,
+      "neckFrame": 5,
+      "head": true
+    },
+    {
+      "id": 12,
+      "kg": 32,
+      "model": true,
+      "chestPeak": 0.13581423512919388,
+      "neckPeak": 0.07592210452719779,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 16,
+      "kg": 1.8,
+      "model": true,
+      "chestPeak": 0.24292039223956283,
+      "neckPeak": 0.1358861146730193,
+      "chestFrame": 3,
+      "neckFrame": 5,
+      "head": true
+    },
+    {
+      "id": 18,
+      "kg": 39.5,
+      "model": true,
+      "chestPeak": 0.12986683762592033,
+      "neckPeak": 0.07239500145479054,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 25,
+      "kg": 6,
+      "model": true,
+      "chestPeak": 0.1962528120346994,
+      "neckPeak": 0.10982856917905426,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": false
+    },
+    {
+      "id": 26,
+      "kg": 30,
+      "model": true,
+      "chestPeak": 0.13766624154395818,
+      "neckPeak": 0.07703419863344244,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 35,
+      "kg": 7.5,
+      "model": true,
+      "chestPeak": 0.1871660769481837,
+      "neckPeak": 0.10456584397596003,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": false
+    },
+    {
+      "id": 37,
+      "kg": 9.9,
+      "model": true,
+      "chestPeak": 0.1762055451448677,
+      "neckPeak": 0.09825451648193155,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 38,
+      "kg": 19.9,
+      "model": true,
+      "chestPeak": 0.15046836855861861,
+      "neckPeak": 0.08436220581014449,
+      "chestFrame": 4,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 39,
+      "kg": 5.5,
+      "model": true,
+      "chestPeak": 0.1998593605097502,
+      "neckPeak": 0.11192555584844494,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": false
+    },
+    {
+      "id": 52,
+      "kg": 4.2,
+      "model": true,
+      "chestPeak": 0.2112467267423274,
+      "neckPeak": 0.11857958565757744,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 54,
+      "kg": 19.6,
+      "model": true,
+      "chestPeak": 0.15099939062157444,
+      "neckPeak": 0.08464169028567904,
+      "chestFrame": 4,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 58,
+      "kg": 19,
+      "model": true,
+      "chestPeak": 0.15209034753860962,
+      "neckPeak": 0.08521553819010053,
+      "chestFrame": 4,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 59,
+      "kg": 155,
+      "model": true,
+      "chestPeak": 0.09611555398136669,
+      "neckPeak": 0.05370846619246458,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": true
+    },
+    {
+      "id": 63,
+      "kg": 19.5,
+      "model": true,
+      "chestPeak": 0.15117850063694493,
+      "neckPeak": 0.08473593412287846,
+      "chestFrame": 4,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 65,
+      "kg": 48,
+      "model": true,
+      "chestPeak": 0.12449745323190828,
+      "neckPeak": 0.06945553333873956,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 66,
+      "kg": 19.5,
+      "model": true,
+      "chestPeak": 0.15117850063694493,
+      "neckPeak": 0.08473593412287846,
+      "chestFrame": 4,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 68,
+      "kg": 130,
+      "model": true,
+      "chestPeak": 0.09977288095006663,
+      "neckPeak": 0.055795480957714215,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": true
+    },
+    {
+      "id": 74,
+      "kg": 20,
+      "model": true,
+      "chestPeak": 0.1502934263627857,
+      "neckPeak": 0.08427010762956472,
+      "chestFrame": 4,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 76,
+      "kg": 300,
+      "model": true,
+      "chestPeak": 0.08310120564805493,
+      "neckPeak": 0.046412280990888094,
+      "chestFrame": 6,
+      "neckFrame": 10,
+      "head": true
+    },
+    {
+      "id": 79,
+      "kg": 36,
+      "model": true,
+      "chestPeak": 0.132469191533552,
+      "neckPeak": 0.07392106193004712,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 80,
+      "kg": 78.5,
+      "model": true,
+      "chestPeak": 0.11156380556476932,
+      "neckPeak": 0.06236824769094986,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 92,
+      "kg": 0.1,
+      "model": true,
+      "chestPeak": 0.24292039223957662,
+      "neckPeak": 0.1358861146730235,
+      "chestFrame": 3,
+      "neckFrame": 5,
+      "head": false
+    },
+    {
+      "id": 94,
+      "kg": 40.5,
+      "model": true,
+      "chestPeak": 0.12917063054950673,
+      "neckPeak": 0.07201393504152329,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 95,
+      "kg": 210,
+      "model": true,
+      "chestPeak": 0.08998517423516479,
+      "neckPeak": 0.05022384178422734,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": false
+    },
+    {
+      "id": 104,
+      "kg": 6.5,
+      "model": true,
+      "chestPeak": 0.19296599492298713,
+      "neckPeak": 0.107921616015651,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 113,
+      "kg": 34.6,
+      "model": true,
+      "chestPeak": 0.13359057620668985,
+      "neckPeak": 0.07459081471129016,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": false
+    },
+    {
+      "id": 123,
+      "kg": 56,
+      "model": true,
+      "chestPeak": 0.12034715007818554,
+      "neckPeak": 0.06718244730448142,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 129,
+      "kg": 10,
+      "model": true,
+      "chestPeak": 0.17581624014738328,
+      "neckPeak": 0.09803103867134731,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 130,
+      "kg": 235,
+      "model": true,
+      "chestPeak": 0.08777653871045757,
+      "neckPeak": 0.04897225635266299,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": true
+    },
+    {
+      "id": 131,
+      "kg": 220,
+      "model": true,
+      "chestPeak": 0.08906754766905205,
+      "neckPeak": 0.04970360744792696,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": false
+    },
+    {
+      "id": 133,
+      "kg": 6.5,
+      "model": true,
+      "chestPeak": 0.19296599492298713,
+      "neckPeak": 0.107921616015651,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 134,
+      "kg": 29,
+      "model": true,
+      "chestPeak": 0.1386443720141472,
+      "neckPeak": 0.07762278494197344,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 135,
+      "kg": 24.5,
+      "model": true,
+      "chestPeak": 0.14356176109578514,
+      "neckPeak": 0.08059517137006658,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 136,
+      "kg": 25,
+      "model": true,
+      "chestPeak": 0.14296813384065946,
+      "neckPeak": 0.08023513615203882,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 143,
+      "kg": 460,
+      "model": true,
+      "chestPeak": 0.07559043838771254,
+      "neckPeak": 0.04227563704792191,
+      "chestFrame": 7,
+      "neckFrame": 10,
+      "head": false
+    },
+    {
+      "id": 144,
+      "kg": 55.4,
+      "model": true,
+      "chestPeak": 0.12063434402301898,
+      "neckPeak": 0.06733977293619905,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 145,
+      "kg": 52.6,
+      "model": true,
+      "chestPeak": 0.12202305735169068,
+      "neckPeak": 0.06810044485226395,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 146,
+      "kg": 60,
+      "model": true,
+      "chestPeak": 0.1185179510484369,
+      "neckPeak": 0.06618028732769551,
+      "chestFrame": 5,
+      "neckFrame": 8,
+      "head": true
+    },
+    {
+      "id": 149,
+      "kg": 210,
+      "model": true,
+      "chestPeak": 0.08998517423516479,
+      "neckPeak": 0.05022384178422734,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": true
+    },
+    {
+      "id": 150,
+      "kg": 122,
+      "model": true,
+      "chestPeak": 0.10111178633749397,
+      "neckPeak": 0.056561151528533804,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": true
+    },
+    {
+      "id": 151,
+      "kg": 4,
+      "model": true,
+      "chestPeak": 0.21333895864833258,
+      "neckPeak": 0.11980790295464509,
+      "chestFrame": 4,
+      "neckFrame": 6,
+      "head": true
+    },
+    {
+      "id": 197,
+      "kg": 27,
+      "model": true,
+      "chestPeak": 0.14071778830076367,
+      "neckPeak": 0.07887333939308433,
+      "chestFrame": 5,
+      "neckFrame": 7,
+      "head": true
+    },
+    {
+      "id": 384,
+      "kg": 206.5,
+      "model": true,
+      "chestPeak": 0.09031813105871665,
+      "neckPeak": 0.05041269077194538,
+      "chestFrame": 6,
+      "neckFrame": 9,
+      "head": true
+    }
+  ],
+  "errors": []
+}
