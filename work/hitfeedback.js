@@ -3,7 +3,8 @@ const HIT_FEEDBACK=Object.freeze({
  depthRatio:.15,leanRadians:10*Math.PI/180,outSeconds:.080,returnSeconds:.250,backOvershoot:.65,
  shakeSeconds:.150,shakeBase:.012,shakeDamage:.045,shakeEffective:1.3,shakeMax:.035,shakeHz:34,shakeVertical:.5,shakeYFrequency:1.37,
  lowPixelRatio:.88,dustCount:5,dustSeconds:.28,dustSize:.10,dustSpread:.30,dustLift:.20,
- dustOpacity:.38,dustColor:0xc3b699,groundLift:.012
+ dustOpacity:.38,dustColor:0xc3b699,groundLift:.012,
+ flashSeconds:.12,flashPeak:.7,flashEffectivePeak:1,flashEffectivePulses:2,flashReducedPeak:.35
 });
 function hitMotionReduced(){return window.matchMedia('(prefers-reduced-motion: reduce)').matches}
 function hitSceneEnabled(f){return !hitMotionReduced()&&(!f.r||f.r.getPixelRatio()>=HIT_FEEDBACK.lowPixelRatio)}
@@ -29,7 +30,7 @@ function startHitFeedback(f,u,damage,effectiveness,dir,attacker){
  away.y=0;if(away.lengthSq()<1e-8)away.set(-Math.sin(u.face),0,-Math.cos(u.face));away.normalize();
  const depth=u.frameSize?.z||u.height;
  const from=u.hitFeedback?sampleHitPose(u.hitFeedback,f.t-u.hitFeedback.start):null;
- u.hitFeedback={start:f.t,away,depth,from};
+ u.hitFeedback={start:f.t,away,depth,from,flash:hitFlashPlan(effectiveness),mats:hitFlashMaterials(u)};
  if(!hitSceneEnabled(f))return;
  const amplitude=Math.min(c.shakeMax,(c.shakeBase+c.shakeDamage*damage/Math.max(1,u.max))*(effectiveness>1?c.shakeEffective:1));
  f.hitCamera={start:f.t,amplitude:Math.max(amplitude,f.hitCamera?.amplitude||0)};
@@ -43,13 +44,13 @@ function startHitFeedback(f,u,damage,effectiveness,dir,attacker){
  }
 }
 function clearHitPose(u){
- const base=u.hitPoseBase;if(!base||!u.root)return;
+ clearHitFlash(u);const base=u.hitPoseBase;if(!base||!u.root)return;
  u.root.position.copy(base.position);u.root.quaternion.copy(base.quaternion);u.hitPoseBase=null;
 }
 function applyHitPose(f,u){
  const h=u.hitFeedback;if(!h||!u.root)return;
  if(f.t-h.start>=HIT_FEEDBACK.outSeconds+HIT_FEEDBACK.returnSeconds){u.hitFeedback=null;return}
- if(hitMotionReduced())return;
+ applyHitFlash(u,f.t-h.start);if(hitMotionReduced())return;
  u.hitPoseBase={position:u.root.position.clone(),quaternion:u.root.quaternion.clone()};
  const pose=sampleHitPose(h,f.t-h.start);
  u.root.position.add(pose.offset);u.root.quaternion.premultiply(pose.rotation);
@@ -63,4 +64,34 @@ function applyHitCamera(f){
  const envelope=Math.pow(1-age/c.shakeSeconds,2),phase=age*c.shakeHz*Math.PI*2;
  f.hitCameraOffset=V(Math.sin(phase),Math.sin(phase*c.shakeYFrequency)*c.shakeVertical,0).multiplyScalar(h.amplitude*envelope).clampLength(0,c.shakeMax);
  f.cam.position.add(f.hitCameraOffset);
+}
+// Victim-only white flash on its own emissive materials. Like the pose, the base values are saved
+// before each frame's flash and restored by clearHitPose, so species emissive tuning is preserved.
+function hitFlashPlan(effectiveness){
+ const c=HIT_FEEDBACK;if(hitMotionReduced())return {pulses:1,peak:c.flashReducedPeak};
+ return effectiveness>1?{pulses:c.flashEffectivePulses,peak:c.flashEffectivePeak}:{pulses:1,peak:c.flashPeak};
+}
+function hitFlashMaterials(u){
+ const mats=new Set;u.root?.traverse(o=>{if(o.isMesh)for(const m of [].concat(o.material))if(m?.emissive)mats.add(m)});
+ return [...mats];
+}
+function hitFlashStrength(h,age){
+ const c=HIT_FEEDBACK,p=h?.flash;if(!p||age<0||age>=p.pulses*c.flashSeconds)return 0;
+ return p.peak*Math.pow(1-(age%c.flashSeconds)/c.flashSeconds,2);
+}
+function clearHitFlash(u){
+ const base=u.hitFlashBase;if(!base)return;
+ for(const b of base){b.m.emissive.copy(b.color);b.m.emissiveIntensity=b.intensity;b.m.userData.hitFlashing=false}
+ u.hitFlashBase=null;
+}
+function applyHitFlash(u,age){
+ const h=u.hitFeedback,k=hitFlashStrength(h,age);if(k<=0||!h.mats?.length)return;
+ const base=[];
+ for(const m of h.mats){
+  // A material shared with another unit that is already flashing keeps that unit's saved base.
+  if(m.userData.hitFlashing)continue;
+  base.push({m,color:m.emissive.clone(),intensity:m.emissiveIntensity});m.userData.hitFlashing=true;
+  m.emissive.multiplyScalar(m.emissiveIntensity).lerp({r:1,g:1,b:1},k);m.emissiveIntensity=1;
+ }
+ u.hitFlashBase=base;
 }
